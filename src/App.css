@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  max-width: 100%;
+
+}
+
+.App {  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height:100%;
+}
+.Full_Content{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width:1106px;
+  height:100%;
+  margin-left: 184px;
+  margin-right: 150px; 
+  padding:0px ;
+  border: 0px;
+  
+}
