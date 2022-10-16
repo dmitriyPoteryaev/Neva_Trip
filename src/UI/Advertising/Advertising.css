@@ -1,77 +1,211 @@
+.Advertising {
+  position: relative;
+  min-width: 100%;
+  min-height: 370px;
+  margin-top: 65px;
+  margin-bottom: 0px;
+  display: flex;
+  padding: 0px;
+  border: 0.5px solid #8e8e8e;
+  border-radius: 15px;
+  justify-content: end;
+
+}
+
+.Image {
+  width: 42%;
+  min-height: 100%;
+  padding: 0px;
+  border: 0px;
+
+}
+
+.Description {
+  display: flex;
+  width: 56%;
+  height: 100%;
+  font-family: "Open Sans";
+  font-style: normal;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 23px;
+  line-height: 34px;
+  font-weight: 400px;
+  margin-bottom: 20px;
 
 
-.Advertising{
-min-width:100%;
-height: 370px;
-margin-top: 65px;
-margin-bottom: 0px;
-display: flex;
-padding:0px ;
-border: 3px solid grey;
-border-radius: 16px 0px 0px 16px;
 }
-.Image{
-    width:44%;
-    height: 100%;
-    border-radius: 16px 0px 0px 16px;
-    padding:0px ;
-    border: 0px;
-  
+
+.Title {
+  font-weight: 400px;
+  font-size: 26px;
+  color: black;
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-bottom: 11px;
+  padding: 0px;
+
 }
-.Description{
+
+.ClockPlusTraveTime {
+  display: flex;
+  top: 125px;
+  justify-content: baseline;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #c7c7c7;
+  padding-left: 22px;
+}
+
+.Clock {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: solid 2px #C7C7C7;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+}
+
+.Arrows {
+  top: 0.4em;
+  left: 0.5em;
+  width: 5px;
+  height: 6px;
+  margin-left: 0.1em
+}
+
+.Possibilities {
+  display: flex;
+  font-style: normal;
+  width: 100%;
+  flex-direction: column;
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0px;
+
+
+}
+
+.low_row {
+  display: flex;
+  width: 100%;
+  margin-top: 11px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.cur_price {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 20px;
+}
+
+.pier_price {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 2px;
+  padding: 4px;
+  padding-left: 0px;
+}
+
+
+.Ad {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 46px;
+  width: 154px;
+  height: 42px;
+  background: #099CE8;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  align-content: center;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .Advertising {
     display: flex;
-    width:56%;
-    height: 100%;
-    font-family: 'Open Sans';
-    font-style: normal;
-    flex-wrap: wrap;
     flex-direction: column;
-    margin-left: 23px;
-    line-height: 34px;
-    font-weight:400px;
 
-}
-.Title{
-   
-    font-weight:400px;
-    font-size:26px;
-    color:black;
-    margin-top: 16px;
-    margin-right: 17px;
-    margin-bottom: 11px;
-}
+  }
 
-.ClockPlusTraveTime{
-display: flex;
-position: relative;
-justify-content: baseline;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-color: #C7C7C7;
-padding-left: 22px;
+  .Description {
+    width: 100%;
+    min-height: 63%;
+    margin-top: 15px;
+    margin-left: 15px;
 
-}
-.Possibilities{
-    display: flex;
+
+
+  }
+
+  .Title {
+    font-family: "Open Sans";
     font-style: normal;
-    width:100%;
-    flex-direction: column;
-    font-weight:400px;
-    font-size:18px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .Possibilities {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-size: 14px;
     line-height: 20px;
-}
-.price{
-    display: flex;
-    flex-direction: column;
-    margin-top:11px;
-    
-}
-.cur_price{
+  }
+
+  .Image {
+    height: 37%;
+    width: 100%;
+  }
+
+  .cur_price {
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 36px;
-line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 20px;
+    margin-right: 0px;
+
+
+  }
+
+  .ClockPlusTraveTime {
+    top: 490px;
+
+  }
+
+
 }
 
+@media (max-width: 400px) {
+  .Description {
+    width: 90%;
+  }
+
+}

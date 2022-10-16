@@ -1,0 +1,30 @@
+.SeeTheTime {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0px;
+}
+
+.takeQuery,
+.active_takeQuery {
+  font-family: "Open Sans";
+  background-color: #c5dcff;
+  font-size: 16px;
+  height: 28px;
+  width: 73px;
+  border-radius: 11px;
+  border: none;
+  margin: 5px;
+}
+.active_takeQuery {
+  background-color: #6ba6ff;
+}
+
+@media (max-width: 400px) {
+  .SeeTheTime {
+    width: 100%;
+  }
+  .takeQuery {
+    width: 22%;
+    margin-right: 0px;
+  }
+}

@@ -1,24 +1,22 @@
 .PosPlusTick {
   margin-top: 11px;
   margin-bottom: 0px;
+  padding-right: 15px;
+  margin-right: 0px;
 }
 .Pos {
   margin-left: 11px;
+  margin-right: 0px;
+  width: 100%;
+  padding-right: 0px;
 }
-.Clock {
-  position: absolute;
-  left: 0px;
-  bottom: 3px;
-  width: 16px;
-  height: 16px;
+.Pos_text {
+  min-width: 100%;
+  margin-right: 20px;
 }
-.takeQuery {
-  font-family: "Open Sans";
-  background-color: #c5dcff;
-  font-size: 16px;
-  height: 28px;
-  width: 73px;
-  border-radius: 11px;
-  border: none;
-  margin-left: 6px;
+
+@media (max-width: 400px) {
+  .PosPlusTick {
+    padding-right: 0px;
+  }
 }
