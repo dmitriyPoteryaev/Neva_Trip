@@ -1,6 +1,9 @@
 import "./SeeTheTime.css";
 import React, { useState } from "react";
 
+// функциональный компонент, отвечающий за логику с ближайшими рейсами
+// getDate - функция нужна , чтобы показывать все возможные рейсы или навершивать другой цвет на 
+
 function SeeTheTime({ next_flight, j }) {
   const [curPos, setcurPos] = useState(NaN);
   const [curActiveQuery, setcurActiveQuery] = useState(NaN);

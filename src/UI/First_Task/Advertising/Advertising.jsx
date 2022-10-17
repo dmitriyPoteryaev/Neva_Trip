@@ -1,14 +1,17 @@
 import "./Advertising.css";
-import React, { useState } from "react";
+import React from "react";
 import Posibities from "../Posibities/Posibities.jsx";
 import About from "../About/About";
-// import classes from './Ad.module.css'
+
+
 
 function Advertising({ elem, curPath, j }) {
   return (
     <div className="Advertising">
+      {/* Верхняя часть рекламы Заголок + фотография  */}
       <img
         className="Image"
+        alt='SomeThContent'
         src={`
         ${process.env.PUBLIC_URL}/PhotoForAdv/${curPath}/${elem.path_img_desktop}`}
       />
@@ -21,14 +24,15 @@ function Advertising({ elem, curPath, j }) {
       >
         {elem?.ad?.title_ad}
       </div>
-
+ {/* Середина рекламы - где описаны все возможности поездки и время , на которое можно забронировать билет  */}
       <article className="Description">
         <div className="Title">{elem.title}</div>
         <div className="ClockPlusTraveTime">
           <div className="Clock">
             <img
               className="Arrows"
-              src={`${process.env.PUBLIC_URL}` + "/icon/arrows.png"}
+              alt="Arrows"
+              src={process.env.PUBLIC_URL + "/icon/arrows.png"}
             />
           </div>
 
@@ -45,20 +49,20 @@ function Advertising({ elem, curPath, j }) {
             ></Posibities>
           ))}
         </div>
-        <div className="low_row"
-         
-        >
+        {/* Нижняя часть рекламы - Цена + Кнопка подробнее */}
+        <div className="low_row">
           <div className="price">
-            <div className="cur_price"
-            style={
-              elem.pier_price
-              ?
-              {marginTop: '0px'}
-              :
-              {marginTop: '16px'}
-            }
-            >{elem.price} ₽</div>
-            <div   className={elem?.pier_price ? "pier_price" : "hidden"}>{elem?.pier_price} ₽ на причале</div>
+            <div
+              className="cur_price"
+              style={
+                elem.pier_price ? { marginTop: "0px" } : { marginTop: "16px" }
+              }
+            >
+              {elem.price} ₽
+            </div>
+            <div className={elem?.pier_price ? "pier_price" : "hidden"}>
+              {elem?.pier_price} ₽ на причале
+            </div>
           </div>
           <About></About>
         </div>

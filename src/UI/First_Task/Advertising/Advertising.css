@@ -7,9 +7,9 @@
   display: flex;
   padding: 0px;
   border: 0.5px solid #8e8e8e;
-  border-radius: 15px;
+  border-bottom-left-radius: 5%;
+  border-top-left-radius: 4%;
   justify-content: end;
-
 }
 
 .Image {
@@ -17,8 +17,9 @@
   min-height: 100%;
   padding: 0px;
   border: 0px;
-
 }
+
+ /* Всё что относиться к тексту в рекламе */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 
 .Description {
   display: flex;
@@ -32,9 +33,9 @@
   line-height: 34px;
   font-weight: 400px;
   margin-bottom: 20px;
-
-
 }
+
+/* Заголовк рекламы  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 
 .Title {
   font-weight: 400px;
@@ -44,8 +45,10 @@
   margin-right: 15px;
   margin-bottom: 11px;
   padding: 0px;
-
 }
+
+
+/* Время затраченное на путь  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 
 .ClockPlusTraveTime {
   display: flex;
@@ -55,20 +58,21 @@
   font-size: 14px;
   line-height: 20px;
   color: #c7c7c7;
-  padding-left: 22px;
+  padding-left: 0px;
 }
+
+/* Рисунок часов слева от времени  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 
 .Clock {
   display: flex;
   width: 16px;
   height: 16px;
   background-color: white;
-  border: solid 2px #C7C7C7;
+  border: solid 2px #c7c7c7;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
-
 }
 
 .Arrows {
@@ -76,8 +80,10 @@
   left: 0.5em;
   width: 5px;
   height: 6px;
-  margin-left: 0.1em
+  margin-left: 0.1em;
 }
+
+/* Все возможности, которые указаны в рекламе */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 
 .Possibilities {
   display: flex;
@@ -88,21 +94,24 @@
   font-size: 18px;
   line-height: 20px;
   margin: 0px;
-
-
 }
 
+
+/* Нижняя часть  рекламы, где указана цена и кнопка подробнее */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 .low_row {
   display: flex;
   width: 100%;
   margin-top: 11px;
 }
 
+/* Cтили ко всем ценам */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 .price {
   display: flex;
   flex-direction: column;
   width: 30%;
 }
+
+
 
 .cur_price {
   font-family: "Open Sans";
@@ -111,6 +120,8 @@
   font-size: 36px;
   line-height: 20px;
 }
+
+/* Стили к ценам на причале */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 
 .pier_price {
   font-family: "Open Sans";
@@ -123,6 +134,7 @@
   padding-left: 0px;
 }
 
+/* Объявление о новинках или о чём-то другом, которые размещены рядом с фотографией места */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 
 .Ad {
   display: flex;
@@ -131,8 +143,8 @@
   top: 46px;
   width: 154px;
   height: 42px;
-  background: #099CE8;
-  font-family: 'Open Sans';
+  background: #099ce8;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -143,6 +155,8 @@
   padding-top: 12px;
 }
 
+
+/* Стили , если нужно что-то скрыть */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
 .hidden {
   display: none;
 }
@@ -151,7 +165,10 @@
   .Advertising {
     display: flex;
     flex-direction: column;
-
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
   }
 
   .Description {
@@ -159,9 +176,6 @@
     min-height: 63%;
     margin-top: 15px;
     margin-left: 15px;
-
-
-
   }
 
   .Title {
@@ -185,27 +199,21 @@
   }
 
   .cur_price {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 20px;
     margin-right: 0px;
-
-
   }
 
   .ClockPlusTraveTime {
     top: 490px;
-
   }
-
-
 }
 
 @media (max-width: 400px) {
   .Description {
     width: 90%;
   }
-
 }

@@ -1,34 +1,40 @@
+
+import React from "react";
+import First_Task from "./pages/First_Task/First_Task.jsx";
+import SecondTask from "./pages/SecondTask/SecondTask.jsx";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Advertising from "./UI/Advertising/Advertising.jsx";
-import React, { useState } from "react";
-import * as json from "./info.json";
 
 function App() {
-  const [curPath, setcurPath] = useState('Desktop');
+    return (
 
-  let width = window.innerWidth;
+<div className="App">
+<HashRouter>
+       <Routes>
 
+       <Route path="/first_task" element={<First_Task/>} />
+       <Route path="/second_task" element={<SecondTask/>} />
+       <Route path="*" element={<First_Task/>} />
+     </Routes>
+   </HashRouter>
 
-
-// width<= 900
-// ?setcurPath("Mobile")
-// : setcurPath("Desktop")
-
-  window.addEventListener("resize", (event) => {
-    event.path[0].innerWidth <= 1200
-      ? setcurPath("Mobile")
-      : setcurPath("Desktop");
-  });
-
-  return (
-    <main className="App">
-      <div className="Full_Content">
-      {json.default.Advertising.map((elem,j) => (
-        <Advertising key={elem.id} elem={elem} curPath={curPath} j={j}></Advertising>
-      ))}
+ 
       </div>
-    </main>
-  );
-}
 
-export default App;
+    );}
+
+    export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

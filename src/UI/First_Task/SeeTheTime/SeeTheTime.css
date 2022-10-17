@@ -18,6 +18,11 @@
 .active_takeQuery {
   background-color: #6ba6ff;
 }
+.tick{
+  width:16px;
+  height:11px ;
+  margin-left:15px;
+}
 
 @media (max-width: 400px) {
   .SeeTheTime {
