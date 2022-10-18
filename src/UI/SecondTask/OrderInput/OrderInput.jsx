@@ -13,6 +13,7 @@ function OrderInput({ value, onchange, inputValue }) {
           placeholder={value.placeholder}
           name={value.name}
           onChange={(event) => onchange(event.target.value)}
+          
         />
       </div>
     </div>

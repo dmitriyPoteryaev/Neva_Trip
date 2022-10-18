@@ -1,10 +1,10 @@
 import "./First_Task.css";
-import Advertising from "../../UI/First_Task/Advertising/Advertising";
+import Advertising from "../../UI/FirstTask/Advertising/Advertising";
 import React, { useState } from "react";
 import * as json from "../../JSON/info.json";
 import { useNavigate } from "react-router-dom";
 
-function First_Task() {
+function FirstTask() {
   const [curPath, setcurPath] = useState("Desktop");
 
   const router = useNavigate();
@@ -34,4 +34,4 @@ function First_Task() {
   );
 }
 
-export default First_Task;
+export default FirstTask;

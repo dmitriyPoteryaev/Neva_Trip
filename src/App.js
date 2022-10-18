@@ -1,7 +1,8 @@
 
 import React from "react";
-import First_Task from "./pages/First_Task/First_Task.jsx";
+import FirstTask from "./pages/FirstTask/FirstTask.jsx";
 import SecondTask from "./pages/SecondTask/SecondTask.jsx";
+import ThirdTask from "./pages/ThirdTask/ThirdTask.jsx";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
@@ -12,9 +13,10 @@ function App() {
 <HashRouter>
        <Routes>
 
-       <Route path="/first_task" element={<First_Task/>} />
+       <Route path="/first_task" element={<FirstTask/>} />
        <Route path="/second_task" element={<SecondTask/>} />
-       <Route path="*" element={<First_Task/>} />
+       <Route path="/third_task" element={<ThirdTask/>} />
+       <Route path="*" element={<FirstTask/>} />
      </Routes>
    </HashRouter>
 

@@ -1,44 +1,42 @@
 {
-    "info_ticket":{
-
-        "ticket_adult":700,
-        "ticket_kid":400,
-        "ticket_preferential":500,
-        "ticket_group":1600
-
-
-
-    },
-    "InfoInput":[{
-        "nameInput": "Введите количество взрослых билетов",
-        "type": "text",
-        "placeholder":"Для взрослых...",
-        "name": "adult"
-      },
-      { "nameInput": "Введите количество детских билетов",
-      "type": "text",
-      "placeholder":"Для детей... ",
-      "name": "kid"
-     
-    },
-    { "nameInput": "Введите количество льготных билетов",
-    "type": "text",
-    "placeholder":"Льготные билеты... ",
-    "name": "preferentia"
+  "info_ticket": {
+    "adult": 700,
+    "kid": 400,
+    "preferential": 500,
+    "group": 1600
   },
-  
-  { "nameInput": "Введите количество групповых билетов",
-  "type": "text",
-  "placeholder":"Групповые билеты... ",
-  "name": "group"
-}
-    ],
+  "InfoInput": [
+    {
+      "nameInput": "Введите количество взрослых билетов",
+      "type": "text",
+      "placeholder": "Для взрослых...",
+      "name": "adult"
+    },
+    {
+      "nameInput": "Введите количество детских билетов",
+      "type": "text",
+      "placeholder": "Для детей... ",
+      "name": "kid"
+    },
+    {
+      "nameInput": "Введите количество льготных билетов",
+      "type": "text",
+      "placeholder": "Льготные билеты... ",
+      "name": "preferential"
+    },
 
+    {
+      "nameInput": "Введите количество групповых билетов",
+      "type": "text",
+      "placeholder": "Групповые билеты... ",
+      "name": "group"
+    }
+  ],
 
   "all": [
     {
       "id": "1",
-      "event_id":"003",
+      "event_id": "003",
       "event_date": "2021-08-21 13:00:00",
       "ticket_type": 1,
       "ticket_quantity": 1,
@@ -46,8 +44,7 @@
       "event_barcode": 1,
       "user_id": 1,
       "equal_price": 1,
-      "created": 1,
-      "equal_price_created": 1
+      "created": 1
     }
   ]
 }
