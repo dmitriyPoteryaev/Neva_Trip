@@ -1,0 +1,8 @@
+.ChoiceTicket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}

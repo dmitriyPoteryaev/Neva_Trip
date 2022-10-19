@@ -1,7 +1,7 @@
 import "./SecondTask.css";
 import React, { useState } from "react";
 import * as jsonTable from "../../JSON/table.json";
-import OrderInput from "../../UI/SecondTask/OrderInput/OrderInput";
+import OrderInput from "../../components/SecondTask/OrderInput/OrderInput";
 import { useNavigate } from "react-router-dom";
 
 

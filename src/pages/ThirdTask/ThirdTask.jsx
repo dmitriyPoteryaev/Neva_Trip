@@ -1,7 +1,16 @@
 import "./ThirdTask.css";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ThirdTask() {
+
+
+  const Routes = {
+    
+    
+    fromBtoA: 'Переместиться из Б в А',
+     fromAtoB: 'Переместиться из А в Б', 
+     fromAtoBandBack:'Переместиться из А в Б и обратно'};
 
     let date = new Date();
 
@@ -77,12 +86,21 @@ function ThirdTask() {
         className="curTime"
         >Текущее время {curTime.year}-{curTime.month}-{curTime.day}    {curTime.hour}:{curTime.munite}</span>
 
-      <select name="route" id="route">
-        <option value="из A в B">из A в B</option>
-        <option value="из B в A">из B в A</option>
-        <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+      
+        {/* это будут линки */}
+        {Object.keys(Routes).map((route,i) =>
+      
+            <Link
+              to={`/third_task/${route}`}
+              key={route}
+            className='WhatPoint'
+            >
+              {Object.values(Routes)[i]}
+            </Link>
+          
+        )}
 
-      </select>
+     
       
     </main>
   );

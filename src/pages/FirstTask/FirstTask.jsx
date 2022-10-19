@@ -1,5 +1,5 @@
 import "./First_Task.css";
-import Advertising from "../../UI/FirstTask/Advertising/Advertising";
+import Advertising from "../../components/UI/FirstTask/Advertising/Advertising";
 import React, { useState } from "react";
 import * as json from "../../JSON/info.json";
 import { useNavigate } from "react-router-dom";
