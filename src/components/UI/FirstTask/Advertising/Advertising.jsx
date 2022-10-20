@@ -9,12 +9,17 @@ function Advertising({ elem, curPath, j }) {
   return (
     <div className="Advertising">
       {/* Верхняя часть рекламы Заголок + фотография  */}
-      <img
+      <picture  >
+        <source 
         className="Image"
-        alt='SomeThContent'
+        srcSet={`
+        ${process.env.PUBLIC_URL}/PhotoForAdv/Mobile/${elem.path_img_desktop}`} media="(max-width: 1200px)"/>
+      <img
+      className="Image"
         src={`
-        ${process.env.PUBLIC_URL}/PhotoForAdv/${curPath}/${elem.path_img_desktop}`}
+        ${process.env.PUBLIC_URL}/PhotoForAdv/Desktop/${elem.path_img_desktop}`}
       />
+      </picture>
       <div
         className={elem.ad ? "Ad" : "hidden"}
         style={{

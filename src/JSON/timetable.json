@@ -1,21 +1,141 @@
 
 {
     "fromAtoB":[
-"2021-08-21 18:00:00",
-"2021-08-21 18:30:00",
-"2021-08-21 18:45:00",
-"2021-08-21 19:00:00",
-"2021-08-21 19:15:00",
-"2021-08-21 21:00:00"
+{
+    "timeTiket":"2021-08-21 18:00:00",
+    "Timezone":"Europe/Moscow",
+    "price":700,
+    "wayTime":{
+        "days":0,
+        "hours":0,
+        "minutes":50
+    }
+},
+{
+    "timeTiket":"2021-08-21 18:30:00",
+    "Timezone":"Europe/Moscow",
+    "price":700,
+    "wayTime":{
+        "days":0,
+        "hours":0,
+        "minutes":50
+    }
+},
+{
+    "timeTiket":"2021-08-21 18:45:00",
+    "Timezone":"Europe/Moscow",
+    "price":700,
+    "wayTime":{
+        "days":0,
+        "hours":0,
+        "minutes":50
+    }
+},
+{
+    "timeTiket":"2021-08-21 19:00:00",
+    "Timezone":"Europe/Moscow",
+    "price":700,
+    "wayTime":{
+        "days":0,
+        "hours":0,
+        "minutes":50
+    }
+},
+{
+    "timeTiket":"2021-08-21 19:15:00",
+    "Timezone":"Europe/Moscow",
+    "price":700,
+    "wayTime":{
+        "days":0,
+        "hours":0,
+        "minutes":50
+    }
+},
+{
+    "timeTiket":"2021-08-21 21:00:00",
+    "Timezone":"Europe/Moscow",
+    "price":700,
+    "wayTime":{
+        "days":0,
+        "hours":0,
+        "minutes":50
+    }
+}
+
+
 ],
 "fromBtoA":[
+    {
+        "timeTiket":"2021-08-21 18:30:00",
+        "Timezone":"Europe/Moscow",
+        "price":700,
+        "wayTime":{
+            "days":0,
+            "hours":0,
+            "minutes":50
+        }
+    },
+    {
+        "timeTiket":"2021-08-21 18:45:00",
+        "Timezone":"Europe/Moscow",
+        "price":700,
+        "wayTime":{
+            "days":0,
+            "hours":0,
+            "minutes":50
+        }
+    },
+    {
+        "timeTiket":"2021-08-21 19:00:00",
+        "Timezone":"Europe/Moscow",
+        "price":700,
+        "wayTime":{
+            "days":0,
+            "hours":0,
+            "minutes":50
+        }
+    },
+    {
+        "timeTiket":"2021-08-21 19:15:00",
+        "Timezone":"Europe/Moscow",
+        "price":700,
+        "wayTime":{
+            "days":0,
+            "hours":0,
+            "minutes":50
+        }
+    },
+    {
+        "timeTiket":"2021-08-21 19:35:00",
+        "Timezone":"Europe/Moscow",
+        "price":700,
+        "wayTime":{
+            "days":0,
+            "hours":0,
+            "minutes":50
+        }
+    },
+    {
+        "timeTiket":"2021-08-21 21:50:00",
+        "Timezone":"Europe/Moscow",
+        "price":700,
+        "wayTime":{
+            "days":0,
+            "hours":0,
+            "minutes":50
+        }
+    },
+    {
+        "timeTiket":"2021-08-21 21:55:00",
+        "Timezone":"Europe/Moscow",
+        "price":700,
+        "wayTime":{
+            "days":0,
+            "hours":0,
+            "minutes":50
+        }
+    }
 
-"2021-08-21 18:30:00",
-"2021-08-21 18:45:00",
-"2021-08-21 19:00:00",
-"2021-08-21 19:15:00",
-"2021-08-21 19:35:00",
-"2021-08-21 21:50:00",
-"2021-08-21 21:55:00"
+
 
 ]}

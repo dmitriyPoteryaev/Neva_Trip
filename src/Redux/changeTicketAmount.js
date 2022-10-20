@@ -1,0 +1,2 @@
+export const CHANGE_TICKET = 'CHANGE_TICKET'
+export const CHANGE_AMOUNT = 'CHANGE_AMOUNT'
