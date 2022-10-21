@@ -1,6 +1,8 @@
 import "./ThirdTask.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {actionCreatorTicket} from '../../Redux/action/actionCreater'
 function ThirdTask() {
 
 
@@ -11,6 +13,13 @@ function ThirdTask() {
      fromAtoB: 'Переместиться из А в Б', 
      fromAtoBandBack:'Переместиться из А в Б и обратно'};
 
+
+     const dispatch =useDispatch()
+
+     dispatch({
+      type: actionCreatorTicket(),
+      payload: [],
+    });
 
 
   return (

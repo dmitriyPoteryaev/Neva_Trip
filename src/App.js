@@ -20,8 +20,8 @@ function App() {
        <Route path="/second_task" element={<SecondTask/>} />
        <Route path="/third_task" element={<ThirdTask/>} />
        <Route exact path={"/third_task/:route"} element={<ChoiceTicket />} />
-       <Route exact path={"/third_task/amountTicket"} element={<AmountTicket/>} />
-       <Route exact path={"/third_task/result"} element={<Result/>} />
+       <Route exact path={"/third_task/:route/amountTicket"} element={<AmountTicket/>} />
+       <Route exact path={"/third_task/:route/result"} element={<Result/>} />
        <Route path="*" element={<FirstTask/>} />
      </Routes>
    </HashRouter>
