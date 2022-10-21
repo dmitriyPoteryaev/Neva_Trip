@@ -6,6 +6,7 @@ import ThirdTask from "./pages/ThirdTask/ThirdTask.jsx";
 import ChoiceTicket from "./components/ThirdTask/ChoiceTicket/ChoiceTicket";
 import AmountTicket from "./components/ThirdTask/AmountTicket/AmountTicket";
 import Result from "./components/ThirdTask/Result/Result";
+import SecondPart from "./pages/FirstTask/SecondPart/SecondPart";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
        <Routes>
 
        <Route path="/first_task" element={<FirstTask/>} />
+       <Route path="/second_part" element={<SecondPart/>} />
        <Route path="/second_task" element={<SecondTask/>} />
        <Route path="/third_task" element={<ThirdTask/>} />
        <Route exact path={"/third_task/:route"} element={<ChoiceTicket />} />

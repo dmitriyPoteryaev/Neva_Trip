@@ -18,7 +18,7 @@ function FirstTask() {
   return (
     <main className="First_Task">
       <div className="Full_Content">
-        <button className="Next_page" onClick={() => router("/second_task")}>
+        <button className="Next_page" onClick={() => router("/second_part")}>
           Следущее задание
         </button>
         {json.default.Advertising.map((elem, j) => (

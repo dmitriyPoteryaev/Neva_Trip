@@ -12,7 +12,6 @@ function Result() {
 
     const params = useParams();
 
-    console.log(store.changeTicket.ticketStartB, store.changeTicket.ticketEndB)
 
     return (
         <div className="Result">

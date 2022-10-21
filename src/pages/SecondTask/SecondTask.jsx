@@ -84,7 +84,7 @@ function SecondTask() {
           Следущее задание
         </button>
       <form className="form" action="#">
-      <span>Как страница заказа билето будет выглядеть с клиентской строны</span>
+      <span>Как страница заказа билетов будет выглядеть с клиентской строны</span>
       <span>Закажите,пожалуйста,билеты</span>
         {Object.values(jsonTable.default)[1].map((value) => (
           <OrderInput
