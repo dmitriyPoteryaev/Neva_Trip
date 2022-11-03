@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Neva_Trip/static/css/main.296e9427.css",
+    "main.js": "/Neva_Trip/static/js/main.8696a542.js",
+    "index.html": "/Neva_Trip/index.html",
+    "main.296e9427.css.map": "/Neva_Trip/static/css/main.296e9427.css.map",
+    "main.8696a542.js.map": "/Neva_Trip/static/js/main.8696a542.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.296e9427.css",
+    "static/js/main.8696a542.js"
+  ]
+}
